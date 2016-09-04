@@ -1,0 +1,16 @@
+[
+	"精通div+css进行页面快速排版布。",
+	"精通原生JavaScript代码，了解JS性能优化，理解js面向对象编程思想。",
+	"精通jQuery，zepto等第三方类库并能扩展插件原型方法。",
+	"熟练掌握seaJs和requireJs等js模块加载器。",
+	"熟练运用HTML5的canvas动画制作，了解SVG。",
+	"熟练掌握sass、less等css预编译语言。",
+	"熟练掌握gulp自动化构建工具。",
+	"熟练掌握响应式布局，基于HTML5的webApp开发以及各种手机移动端适配。",
+	"熟练掌握AngularJS框架，实时数据绑定以及页面渲染",
+	"熟悉AJAX异步通信技术，可以很好的与后台合作完成数据更新。",
+	"熟悉web SEO优化，并能合理使用语义化标签。",
+	"熟悉前端性能优化处理(如按需加载，减少http请求，css sprites等)。",
+	"具有PC端，WebApp前端开发经验。",
+	"熟悉coffeScript等js预编译语言和ES6新特征。"
+]

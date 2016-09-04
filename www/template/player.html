@@ -1,0 +1,12 @@
+<ion-view view-title = '项目经验'>
+	<ion-content>
+		<ion-list>
+			<ion-item ng-repeat='x in playList' class = 'item-avatar item-remove-animate' ui-sref = 'app.detail({id:x.id})'>
+				<img ng-src="{{x.face}}" >
+				<b>{{x.name}}</b>
+				<p>{{x.lastText}}</p>
+				<ion-option-button class = 'button-assertive' ng-click="remove1(x)">删除</ion-option-button>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

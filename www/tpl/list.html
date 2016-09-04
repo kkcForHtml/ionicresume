@@ -1,0 +1,26 @@
+<ion-pane ng-controller="myctr">
+      <ion-header-bar class="bar-stable bar-positive" align-title = 'left'>
+      	<button class="button button-icon ion-reply" ng-click="showDeleteButtons()"></button>
+        <h1 class="title">{{title}}</h1>
+        <button class="button button-icon ion-settings" ng-click="showReorder=!showReorder"></button>
+      </ion-header-bar>
+      <ion-content>
+				<ion-list 
+					show-delete = 'false' 
+					show-reorder='false' 
+					type = 'card'
+					delegate-handle = 'my-handle'
+					>
+					<ion-item ng-repeat="x in listData" class = 'item-thumbnail-left item-remove-animate' >
+						<img src="http://placehold.it/100x100"/>
+						<h2>{{x.title}}</h2>
+						<p class="padding-top">{{x.description}}</p>
+						<ion-delete-button class="icon ion-ios-minus-outline" ng-click="removeItem($index)"></ion-delete-button>
+						<ion-reorder-button class = 'icon ion-navicon' on-reorder = 'moveItem(x,$fromIndex,$toIndex)'></ion-reorder-button>
+						<ion-option-button class = "button-positive" ng-click="godesc(x.description)">修改</ion-option-button>
+						<ion-option-button class = "button-calm" ui-sref = 'tabs.detail({id:$index})'>分享</ion-option-button>
+						
+					</ion-item>
+				</ion-list>    	
+      </ion-content>
+    </ion-pane>

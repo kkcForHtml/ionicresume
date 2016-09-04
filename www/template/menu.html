@@ -1,0 +1,44 @@
+<ion-side-menus  enable-menu-with-back-views="false">
+	<!--表示侧边栏子视图-->
+	<!-- 内容
+	enable-menu-width-back-views="false" 打开子页面的要不要把menu当做导航
+	drag-content 内容拖拽
+	edge-drag-threshold 表示边界值 ，手指放在什么位置 200 true false
+	-->	
+	<ion-side-menu-content>
+		<ion-nav-bar class="bar-positive">
+			<ion-nav-back-button></ion-nav-back-button>
+			<ion-nav-buttons>
+				<button class="button button-icon icon ion-navicon"
+					menu-toggle = 'left'
+					></button>
+			</ion-nav-buttons>
+		</ion-nav-bar>
+		<ion-nav-view name = 'menuContent'></ion-nav-view>
+	</ion-side-menu-content>
+	<!--表示侧边栏-->
+	<!-- 侧边栏 
+	side 表示 名称
+	is-enabled 是否点击有效
+	expose-aside-when表示什么情况下不管点不点击都显示 large 表示超过768
+	-->	
+	<ion-side-menu
+		side="left"
+		width=owidth
+		is-enabled = 'true'
+		expose-aside-when='large'		
+		>
+		<ion-header-bar class="bar-positive">
+			<h2 class="title">我的简历</h2>
+		</ion-header-bar>
+		<ion-content>
+			<ion-list class = 'item-icon-right'>
+				<ion-item menu-close ui-sref ='app.photo'>基本信息<i class="icon ion-ios-arrow-right"></i></ion-item>
+				<ion-item menu-close ng-click = 'openModal($event)'>个人技能<i class="icon ion-ios-arrow-right"></i></ion-item>
+				<ion-item menu-close ui-sref ='app.ewm'>工作经历<i class="icon ion-ios-arrow-right"></i></ion-item>
+				<ion-item menu-close ui-sref ='app.player'>项目经验<i class="icon ion-ios-arrow-right"></i></ion-item>
+				<ion-item menu-close ui-sref ='app.resume'>自我评价<i class="icon ion-ios-arrow-right"></i></ion-item>
+			</ion-list>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>

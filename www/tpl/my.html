@@ -1,0 +1,14 @@
+<ion-pane ng-controller="wodectr">
+      <ion-header-bar class="bar-stable bar-positive" align-title = 'left'>
+      	<button class="button button-icon ion-reply" ng-click="showDeleteButtons()"></button>
+        <h1 class="title">{{title}}</h1>
+        <button class="button button-icon ion-settings" ng-click="showReorder=!showReorder"></button>
+      </ion-header-bar>
+      <ion-content
+      	padding = 'true'
+      	>
+		<button class="button button-calm button-outline button-block" ng-click="showTabsIndex()">显示Tabs索引</button>
+		<button class="button button-calm button-outline button-block" ng-click="enterTab(1)">进入某一页</button>
+		<button class="button button-calm button-outline button-block" ng-click="showBars()">显示隐藏Tabs</button>		
+      </ion-content>
+    </ion-pane>

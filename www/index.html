@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+		<script type="text/javascript">
+			window.onload = function () {
+				//document.getElementsByClassName('spinner')[0].style.display = 'none';
+				document.getElementsByClassName('sp')[0].remove()
+			}
+		</script>
+  </head>
+  	<div class="sp">
+  	<div class="spinner">
+  		<div class="cube1"></div>
+  		<div class="cube2"></div>
+		</div>
+  	</div>
+  <body ng-app="starter">
+		<!--ion-pane 充满全屏的容器,buttons表示按钮组-->
+	<ion-nav-view></ion-nav-view>
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+		<script src='lib/ngCordova/dist/ng-cordova.min.js'></script>    
+    <!-- your app's js -->
+    <script src="js/app-sideMenu.js"></script>
+	
+  </body>
+</html>
+
+

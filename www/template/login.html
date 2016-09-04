@@ -1,0 +1,24 @@
+
+            <ion-modal-view ng-controller="loginCtrl">
+                <ion-header-bar class="bar-positive">
+                    <h2 class="title">个人技能</h2>
+                    <button class="button button-clear icon ion-android-cancel"
+                    ng-click='closeModal()'
+                    ></button>
+                </ion-header-bar>
+                <ion-content class="padding" overflow-scroll="false">
+					<ion-refresher
+						refreshing-text = '正在刷新'
+						on-refresh = 'dorefresh()'
+						pulling-text = '{{pullingText}}'
+						on-pulling = 'onpulling()'
+						
+						></ion-refresher>			
+						<!--<ion-item ng-repeat="x in listData track by $index">{{x}}</ion-item>-->
+						<div class="login">
+							<p class="op" ng-repeat="x in listData track by $index"><i class="icon ion-heart"></i>{{x}}</p>
+						</div>
+                </ion-content>
+            </ion-modal-view>            	
+  
+

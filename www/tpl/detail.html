@@ -1,0 +1,24 @@
+<ion-pane ng-controller="detailCtrl">
+      <ion-header-bar class="bar-positive" align-title="center">
+
+          <div class="buttons">
+            <button class="button button-icon ion-reply"
+            ui-sref="tabs.list"
+            ></button>
+          </div>
+            <h2 class="title">{{title+oIndex}}</h2>
+          <div class="buttons">
+            <button class="button button-icon ion-navicon-round"
+            ng-click="showReorder = !showReorder"
+            ></button>
+          </div>
+
+      </ion-header-bar>
+       <ion-content padding="true">
+          <b>
+          欢迎:{{oIndex}}号员工
+          </b>
+          <button class="button button-energized button-outline button-block icon ion-chevron-right icon-right"
+          ui-sref = 'tabs.script({id:oIndex})'>查看个人权限</button>
+       </ion-content>
+</ion-pane>

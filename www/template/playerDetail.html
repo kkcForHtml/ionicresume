@@ -1,0 +1,13 @@
+<ion-view view-title="{{playData.name}}">
+	<ion-content class="padding" overflow-scroll="false">
+		<div class="detail">
+			<p><b>软件环境：</b><em>{{playData.softElement}}</em></p>
+			<p><b>硬件环境：</b><em>{{playData.hardElement}}</em></p>
+			<p><b>开发工具：</b><em style="font-size: 14px;">{{playData.softWare}}</em></p>			
+			<p><b>开发周期：</b><em>{{playData.times}}</em></p>
+			<p><b>责任描述：</b><ul style="padding-left:8%;"><li ng-repeat="x in playData.tasks">{{$index+1}}、{{x}}</li></ul></p>			
+			<p><b>应用技术：</b><ul style="padding-left:8%;"><li ng-repeat="x in playData.skills">{{$index+1}}、{{x}}</li></ul></p>			
+			
+		</div>
+	</ion-content>	
+</ion-view>

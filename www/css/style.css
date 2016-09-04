@@ -1,0 +1,223 @@
+/* Empty. Add your own CSS if you like */
+/*.spinner.spinner-dark{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	stroke: red;
+    fill: red;
+}
+.spinner svg{
+	width: 200px;
+	height: 200px;
+	color: darkblue;
+}*/
+/*.as .action-sheet-title{
+	font-size: 16px;
+	color: darkblue;
+}
+.pop .popup{
+	border-radius:8px ;
+}
+.pop .popup-buttons .button{
+	width: 20px;
+	height: 40px;
+}*/
+body{
+	font-family: "微软雅黑"
+}
+.slider{
+	height: 300px;
+}
+.slider .box{
+	height: 100%;
+	text-align: center;
+	display: -webkit-box;
+	-webkit-box-align: center;
+}
+.slider .box h2{
+	width: 100%;
+	text-align: center;
+}
+.slider .box.calm{
+	background: darkcyan;
+}
+.slider .box.calm1{
+	background: khaki;
+}.slider .box.calm2{
+	background: #007AFF;
+}.slider .box.calm3{
+	background: cadetblue;
+}
+ion-slides{
+	height: 300px;
+}
+ion-slides .box{
+	height: 100%;
+	text-align: center;
+	display: -webkit-box;
+	-webkit-box-align: center;
+}
+ion-slides .box h2{
+	width: 100%;
+	text-align: center;
+}
+ion-slides .box.calm{
+	background: darkcyan;
+}
+ion-slides .box.calm1{
+	background: khaki;
+}ion-slides .box.calm2{
+	background: #007AFF;
+}ion-slides .box.calm3{
+	background: cadetblue;
+}
+.bar h2{
+	font-family: "微软雅黑"
+}
+.photoImg{
+	display:block;
+    width: 96%;
+    margin:  10px auto;
+    box-shadow: 0 2px 10px #ccc;	
+}
+.scroll{
+	height: 100%;
+}
+.photo{
+	border:1px solid #ccc;
+	width: 80%;
+	margin: 10px auto;
+	height: 65%;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	border-radius: 10px;
+}
+.photo p{
+	padding-left: 5%;
+	display: flex;
+	-webkit-align-items: center;
+	font-size: 16px;
+	margin: 0;
+	border-bottom:1px solid #CCCCCC ;
+	-webkit-box-flex: 1;
+}
+.photo p:last-child{
+	border: 0;
+}
+.photo em{
+	width: 35%;
+}
+.login{
+	width: 100%;
+	margin: auto;
+	height: 100%;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	border:1px solid #ccc;
+	border-radius: 10px;
+	
+}
+.login p{
+	display: flex;
+	-webkit-align-items: center;
+	font-size: 14px;
+	margin: 0;
+	-webkit-box-flex: 1;
+	border-bottom:1px solid #CCCCCC ;
+	
+}
+.login i{
+	margin: 0 16px;
+	font-size: 20px;
+}
+.login p:last-child{
+	border: 0;
+}
+.item-icon-right {
+    padding-right: 0px;
+}
+.ewm{
+	width: 95%;
+	height: 70%;
+	margin-top:30px ;
+}
+.ewm p{
+	padding-left: 3%;
+	line-height: 24px;
+}
+.ewm em{
+	width: 30%;
+}
+.resume{
+	width: 90%;
+	margin-top: 40px;
+}
+.detail{
+	margin-top:10px ;
+}
+.detail p{
+	line-height: 24px;
+}
+.detail b{
+	font-size: 16px;
+}
+.detail em{
+	margin-top:10px;
+	font-size: 16px;
+}
+.sp{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	z-index: 99;
+}
+.spinner {
+  margin: 70% auto;
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+ 
+.cube1, .cube2 {
+  background-color: #67CF22;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+   
+  -webkit-animation: cubemove 1.8s infinite ease-in-out;
+  animation: cubemove 1.8s infinite ease-in-out;
+}
+.cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+ 
+@-webkit-keyframes cubemove {
+  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  100% { -webkit-transform: rotate(-360deg) }
+}
+ 
+@keyframes cubemove {
+  25% {
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  } 50% {
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+  } 50.1% {
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  } 75% {
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+  } 100% {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
